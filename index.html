@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexora – Ideas, Mind & Future Publication</title>
+    <meta
+      name="description"
+      content="A premium minimalist publication exploring deep ideas in technology, human psychology, science, digital culture, and the future of work."
+    />
+    <meta name="keywords" content="Nexora, ideas blog, psychology, attention economy, artificial intelligence, science, digital minimalism, future of work" />
+    <meta name="author" content="Nexora Editorial" />
+    <link rel="canonical" href="https://nexora.publication/" />
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nexora – Ideas, Mind & Future Publication" />
+    <meta
+      property="og:description"
+      content="A premium minimalist publication exploring deep ideas in technology, human psychology, science, digital culture, and the future of work."
+    />
+    <meta property="og:site_name" content="Nexora" />
+    <meta property="og:url" content="https://nexora.publication/" />
+
+    <!-- Twitter / X Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nexora – Ideas, Mind & Future Publication" />
+    <meta
+      name="twitter:description"
+      content="A premium minimalist publication exploring deep ideas in technology, human psychology, science, digital culture, and the future of work."
+    />
+
+    <!-- Google Fonts: Newsreader (Editorial Serif) & Plus Jakarta Sans (Modern Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Structured Data (JSON-LD) for Organization & WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://nexora.publication/#website",
+          "url": "https://nexora.publication/",
+          "name": "Nexora",
+          "description": "A premium minimalist publication exploring the frontiers of technology, human psychology, science, and the future.",
+          "inLanguage": "en-US",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Nexora Editorial Board",
+            "url": "https://nexora.publication/"
+          }
+        },
+        {
+          "@type": "Blog",
+          "@id": "https://nexora.publication/#blog",
+          "name": "Nexora Journal",
+          "url": "https://nexora.publication/articles",
+          "isPartOf": {
+            "@id": "https://nexora.publication/#website"
+          }
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-[#FAF8F5] text-stone-900 antialiased selection:bg-stone-300 selection:text-stone-900 dark:bg-[#121110] dark:text-stone-100 dark:selection:bg-stone-700 dark:selection:text-stone-100 transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
