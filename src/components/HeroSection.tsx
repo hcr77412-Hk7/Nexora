@@ -25,7 +25,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <span aria-hidden="true">·</span>
             <span>The Hidden Side of Technology</span>
             <span aria-hidden="true">·</span>
-            <span>Nexora Journal</span>
+            <span>Nexora Tech</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif-editorial font-medium text-stone-900 dark:text-stone-100 tracking-tight leading-[1.12]">
@@ -33,7 +33,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </h1>
 
           <p className="mt-5 text-lg sm:text-xl text-stone-600 dark:text-stone-300 font-normal leading-relaxed">
-            Nexora is a thoughtful technology publication exploring the unseen mechanisms behind algorithms, smartphones, digital privacy, artificial intelligence, and the psychology of our connected world.
+            Nexora Tech is a thoughtful technology publication exploring the unseen mechanisms behind algorithms, smartphones, digital privacy, artificial intelligence, and the psychology of our connected world.
           </p>
         </div>
 

@@ -86,10 +86,10 @@ export function updateMetaTags(options: {
       },
       publisher: {
         '@type': 'Organization',
-        name: 'Nexora',
+        name: 'Nexora Tech',
         logo: {
           '@type': 'ImageObject',
-          url: 'https://nexora.publication/logo.png'
+          url: 'https://nexoratech.publication/logo.png'
         }
       },
       mainEntityOfPage: {
@@ -102,12 +102,12 @@ export function updateMetaTags(options: {
     const generalSchema = {
       '@context': 'https://schema.org',
       '@type': 'WebSite',
-      name: 'Nexora',
+      name: 'Nexora Tech',
       url: canonicalUrl,
       description: description,
       publisher: {
         '@type': 'Organization',
-        name: 'Nexora Editorial'
+        name: 'Nexora Tech Editorial'
       }
     };
     jsonLdEl.textContent = JSON.stringify(generalSchema, null, 2);
@@ -115,7 +115,7 @@ export function updateMetaTags(options: {
 }
 
 export function generateSitemapXml(articles: Article[]): string {
-  const baseUrl = 'https://nexora.publication';
+  const baseUrl = 'https://nexoratech.publication';
   const currentDate = new Date().toISOString().split('T')[0];
 
   interface SitemapItem {
@@ -159,8 +159,8 @@ ${xmlItems}
 }
 
 export function generateRobotsTxt(): string {
-  return `# Robots.txt for Nexora Ideas & Thought Publication
-# Canonical Host: https://nexora.publication
+  return `# Robots.txt for Nexora Tech Publication
+# Canonical Host: https://nexoratech.publication
 
 User-agent: *
 Allow: /
@@ -168,6 +168,6 @@ Disallow: /api/
 Disallow: /private/
 
 # Sitemaps
-Sitemap: https://nexora.publication/sitemap.xml
+Sitemap: https://nexoratech.publication/sitemap.xml
 `;
 }

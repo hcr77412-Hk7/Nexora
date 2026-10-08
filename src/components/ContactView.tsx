@@ -42,7 +42,7 @@ export const ContactView: React.FC = () => {
           </h1>
 
           <p className="text-lg text-stone-600 dark:text-stone-300 max-w-2xl leading-relaxed">
-            Nexora welcomes rigorous pitches, corrections, letters to the editor, and institutional dialogues. Every substantive message is reviewed by our editorial desk.
+            Nexora Tech welcomes rigorous pitches, corrections, letters to the editor, and institutional dialogues. Every substantive message is reviewed by our editorial desk.
           </p>
         </div>
 

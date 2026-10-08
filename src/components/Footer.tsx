@@ -23,7 +23,7 @@ export const Footer: React.FC<FooterProps> = ({
           {/* Brand & Manifesto Column */}
           <div className="lg:col-span-2 space-y-4">
             <span className="text-2xl font-serif-editorial font-medium text-stone-900 dark:text-stone-100">
-              Nexora
+              Nexora Tech
             </span>
             <p className="text-xs sm:text-sm text-stone-500 dark:text-stone-400 max-w-sm leading-relaxed">
               A thoughtful technology publication investigating how algorithms, digital privacy, smartphones, artificial intelligence, and digital incentives quietly reshape human life.
@@ -137,7 +137,7 @@ export const Footer: React.FC<FooterProps> = ({
         {/* Bottom Hairline & Copyright */}
         <div className="mt-12 pt-8 border-t border-stone-200/60 dark:border-stone-800/60 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400 dark:text-stone-500 gap-4">
           <div>
-            © {new Date().getFullYear()} Nexora Publication. All rights reserved. Content crafted with editorial rigor.
+            © {new Date().getFullYear()} Nexora Tech. All rights reserved. Content crafted with editorial rigor.
           </div>
 
           {/* Social placeholders */}

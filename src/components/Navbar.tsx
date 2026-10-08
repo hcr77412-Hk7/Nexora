@@ -36,10 +36,10 @@ export const Navbar: React.FC<NavbarProps> = ({
             setMobileMenuOpen(false);
           }}
           className="text-left group cursor-pointer"
-          aria-label="Nexora Home"
+          aria-label="Nexora Tech Home"
         >
           <span className="text-2xl sm:text-3xl font-serif-editorial tracking-tight font-medium text-stone-900 dark:text-stone-100 group-hover:text-amber-800 dark:group-hover:text-amber-200 transition-colors">
-            Nexora
+            Nexora Tech
           </span>
         </button>
 
@@ -170,7 +170,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 : 'text-stone-700 dark:text-stone-300 hover:bg-stone-100 dark:hover:bg-stone-800'
             }`}
           >
-            About Nexora
+            About Nexora Tech
           </button>
           <button
             onClick={() => {

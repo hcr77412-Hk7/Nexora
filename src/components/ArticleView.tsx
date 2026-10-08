@@ -74,7 +74,7 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
   };
 
   const shareToTwitter = () => {
-    const text = encodeURIComponent(`"${article.title}" via Nexora Journal`);
+    const text = encodeURIComponent(`"${article.title}" via Nexora Tech`);
     const url = encodeURIComponent(window.location.href);
     window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank', 'noopener,noreferrer');
   };

@@ -169,40 +169,40 @@ export default function App() {
   useEffect(() => {
     if (currentPage.type === 'article' && activeArticle) {
       updateMetaTags({
-        title: `${activeArticle.title} – Nexora Journal`,
+        title: `${activeArticle.title} – Nexora Tech`,
         description: activeArticle.excerpt,
-        canonicalUrl: `https://nexora.publication/articles/${activeArticle.slug}`,
+        canonicalUrl: `https://nexoratech.publication/articles/${activeArticle.slug}`,
         ogType: 'article',
         ogImage: activeArticle.image,
         article: activeArticle
       });
     } else if (currentPage.type === 'articles') {
       updateMetaTags({
-        title: 'All 10 Inquiries – Nexora: The Hidden Side of Technology',
+        title: 'All 10 Inquiries – Nexora Tech: The Hidden Side of Technology',
         description:
           'Explore our collection of 10 thoughtful inquiries into algorithms, smartphones, privacy, artificial intelligence, attention, and the future of work.',
-        canonicalUrl: 'https://nexora.publication/articles'
+        canonicalUrl: 'https://nexoratech.publication/articles'
       });
     } else if (currentPage.type === 'about') {
       updateMetaTags({
-        title: 'About & Curatorial Manifesto – Nexora',
+        title: 'About & Curatorial Manifesto – Nexora Tech',
         description:
-          'Discover the founding philosophy and curatorial standards of Nexora—a thoughtful publication exploring the hidden mechanics of modern technology.',
-        canonicalUrl: 'https://nexora.publication/about'
+          'Discover the founding philosophy and curatorial standards of Nexora Tech—a thoughtful publication exploring the hidden mechanics of modern technology.',
+        canonicalUrl: 'https://nexoratech.publication/about'
       });
     } else if (currentPage.type === 'contact') {
       updateMetaTags({
-        title: 'Editorial Bureau & Submissions – Nexora',
+        title: 'Editorial Bureau & Submissions – Nexora Tech',
         description:
-          'Send letters to the editor, research pitches, factual inquiries, and syndication requests directly to the Nexora editorial desk.',
-        canonicalUrl: 'https://nexora.publication/contact'
+          'Send letters to the editor, research pitches, factual inquiries, and syndication requests directly to the Nexora Tech editorial desk.',
+        canonicalUrl: 'https://nexoratech.publication/contact'
       });
     } else {
       updateMetaTags({
-        title: 'Nexora – The Hidden Side of Technology',
+        title: 'Nexora Tech – The Hidden Side of Technology',
         description:
           'A thoughtful editorial publication exploring how technology quietly affects our everyday lives, behavior, privacy, attention, relationships, work, and the future.',
-        canonicalUrl: 'https://nexora.publication/'
+        canonicalUrl: 'https://nexoratech.publication/'
       });
     }
   }, [currentPage, activeArticle]);

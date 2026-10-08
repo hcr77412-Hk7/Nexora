@@ -24,7 +24,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => {
           </h1>
 
           <p className="text-xl sm:text-2xl text-stone-600 dark:text-stone-300 font-serif-editorial italic leading-relaxed">
-            Nexora is an independent editorial publication exploring how software, algorithms, smartphones, and artificial intelligence quietly alter our psychology, privacy, attention, and future.
+            Nexora Tech is an independent editorial publication exploring how software, algorithms, smartphones, and artificial intelligence quietly alter our psychology, privacy, attention, and future.
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => {
             Most technology coverage focuses either on gadget consumerism—reviewing the latest camera lenses and phone iterations—or celebratory press releases from Silicon Valley venture rounds.
           </p>
           <p>
-            Nexora was founded to explore the questions left in the shadows: What does our smartphone sensor telemetry reveal about our emotional state? How do recommendation engines quietly shape the bounds of public discourse? What happens to the human capacity for deep creativity when micro-stimulus eliminates boredom?
+            Nexora Tech was founded to explore the questions left in the shadows: What does our smartphone sensor telemetry reveal about our emotional state? How do recommendation engines quietly shape the bounds of public discourse? What happens to the human capacity for deep creativity when micro-stimulus eliminates boredom?
           </p>
           <p>
             We do not publish daily gadget news or partisan outrage. We publish deeply researched, accessible investigations into the systems quietly re-architecting human society.
@@ -44,7 +44,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => {
         {/* Editorial Pillars */}
         <section className="pt-8 border-t border-stone-200 dark:border-stone-800">
           <h2 className="text-2xl font-serif-editorial font-medium text-stone-900 dark:text-stone-100 mb-8">
-            The Nexora Editorial Principles
+            The Nexora Tech Editorial Principles
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
