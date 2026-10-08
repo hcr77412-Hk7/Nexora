@@ -47,7 +47,7 @@ export const ARTICLES: Article[] = [
         content: [
           'Most people understand that their phone knows their geographic coordinates when maps are opened, and their financial transactions when tapping a payment terminal. These explicit data points feel transactional: you trade a piece of information for navigational guidance or a morning latte.',
           'What remains largely invisible is the continuous hum of secondary telemetry. Modern flagship smartphones house a sophisticated laboratory of micro-electro-mechanical systems (MEMS): tri-axial accelerometers, gyroscopes, barometric pressure altimeters, ambient light sensors, dual microphones, magnetometer compasses, and proximity detectors.',
-          'Unlike cameras and GPS, many of these auxiliary sensors historically operated with far fewer operating system permission gates. Operating systems and third-party SDKs embedded inside mundane weather, flashlight, or casual gaming apps can query these sensors hundreds of times per second, building a behavioral fingerprint that transcends your name or email address.'
+          'As explored in our companion investigation, [Digital Privacy Is More Complicated Than You Think](#articles/digital-privacy-is-more-complicated-than-you-think), modern commercial tracking rarely relies on single signals. Operating systems and third-party SDKs embedded inside mundane weather, flashlight, or casual gaming apps can query these sensors hundreds of times per second, building a behavioral fingerprint that transcends your name or email address.'
         ]
       },
       {
@@ -147,7 +147,8 @@ export const ARTICLES: Article[] = [
         content: [
           'Many believe they can multitask: spend forty seconds checking a notification, then immediately resume writing a financial report or coding a module. Cognitive science demonstrates this is a neurological impossibility.',
           'Dr. Sophie Leroy\'s research on "attention residue" proves that when you switch from Task A to Task B, part of your working memory remains anchored to the previous stimulus. Your prefrontal cortex must clear cache, re-orient to the goal hierarchy, and rebuild mental models—a process that takes up to 23 minutes for deep focus.',
-          'When you check your device thirty times across a workday, you are never actually working in an unfragmented state. You are perpetually operating with an impaired cognitive buffer.'
+          'When you check your device thirty times across a workday, you are never actually working in an unfragmented state. You are perpetually operating with an impaired cognitive buffer.',
+          'This continuous interruption also eliminates the essential restorative pauses examined in [What Happens to Your Brain When You Stop Being Bored?](#articles/what-happens-to-your-brain-when-you-stop-being-bored), while creating the social craving detailed in [Why Social Media Feels Impossible to Quit](#articles/why-social-media-feels-impossible-to-quit).'
         ]
       }
     ],
@@ -265,7 +266,8 @@ export const ARTICLES: Article[] = [
         content: [
           'Human beings have always outsourced cognitive tasks to external tools. The invention of writing relieved us of the burden of memorizing long oral epics; the abacus and digital calculator freed us from tedious arithmetic; GPS relieved us from memorizing city street grids.',
           'In each previous case, however, the tool was domain-constrained. A calculator performed math, but it did not tell you which mathematical question was worth asking. A map showed coordinates, but it did not decide your destination.',
-          'Generative artificial intelligence represents a qualitative break from this historical continuum. For the first time, we have built tools that operate directly in the domain of creative synthesis, conceptual formulation, rhetorical persuasion, and problem framing. We are not just offloading calculation; we are offloading deliberation.'
+          'Generative artificial intelligence represents a qualitative break from this historical continuum. For the first time, we have built tools that operate directly in the domain of creative synthesis, conceptual formulation, rhetorical persuasion, and problem framing. We are not just offloading calculation; we are offloading deliberation.',
+          'This structural shift is already altering the white-collar labor market, a transition we analyze in [The Future of Work: Will AI Replace Jobs or Change Them?](#articles/the-future-of-work-will-ai-replace-jobs-or-change-them).'
         ]
       },
       {
@@ -420,7 +422,8 @@ export const ARTICLES: Article[] = [
         content: [
           'For decades, web surveillance relied on cookies—tiny text files stored in your browser containing a unique tracking ID. When European regulations (GDPR) mandated cookie consent banners, consumers rejoiced, clicking "Reject All" with satisfaction.',
           'The advertising industry, however, had already engineered an alternative that requires no local file storage: browser fingerprinting.',
-          'When you connect to a modern website, the site\'s JavaScript queries your browser for parameters needed to render graphics properly: your operating system version, screen resolution, color depth, timezone, installed system fonts, GPU model via WebGL, and subtle audio buffer latencies. While millions of people use Windows or macOS, the combination of your exact graphics card, font library, and audio hardware is statistically unique. Electronic Frontier Foundation research found that over 83% of browsers possess a globally unique fingerprint.'
+          'When you connect to a modern website, the site\'s JavaScript queries your browser for parameters needed to render graphics properly: your operating system version, screen resolution, color depth, timezone, installed system fonts, GPU model via WebGL, and subtle audio buffer latencies. While millions of people use Windows or macOS, the combination of your exact graphics card, font library, and audio hardware is statistically unique. Electronic Frontier Foundation research found that over 83% of browsers possess a globally unique fingerprint.',
+          'This hardware identification mirrors the mobile sensor telemetry we document in [Your Phone Knows More About You Than You Think](#articles/your-phone-knows-more-about-you-than-you-think), creating an uninterrupted surveillance mesh across all your devices.'
         ]
       },
       {
@@ -652,6 +655,7 @@ export const ARTICLES: Article[] = [
           'If you want to fundamentally reshape your digital life, rely on structural architecture rather than willpower:',
           '**Turn Your Screen to Grayscale**: In your phone\'s accessibility settings, configure color filters to black-and-white. App icons and notification badges are colored like ripe fruit in a rainforest to trigger dopamine receptors. In monochrome, your phone instantly transforms from a hypnotic casino into an uninteresting slab of utilitarian glass.',
           '**Establish Device-Free Sanctuaries**: Ban screens entirely from specific physical spaces and times. The most vital rule: never charge your phone in your bedroom. Buy a simple ten-dollar analog alarm clock. Reclaiming the final thirty minutes of your evening and the first thirty minutes of your morning transforms your sleep and mental health.',
+          'These intentional boundaries directly restore the resting cognitive state we examine in [What Happens to Your Brain When You Stop Being Bored?](#articles/what-happens-to-your-brain-when-you-stop-being-bored), allowing your default mode network to consolidate thoughts naturally.',
           '**Batch Communications**: Check email and messaging apps only at designated windows (e.g., 11:00 AM and 4:00 PM). Turn off all banner and lock-screen notifications except for direct phone calls from designated family members.'
         ]
       },
@@ -705,7 +709,8 @@ export const ARTICLES: Article[] = [
         content: [
           'For the first thirty-five years of the World Wide Web, virtually every paragraph of text, photograph, and video was created by a biological human being. When you typed a search query or browsed a forum, you were connecting with another person\'s documented experience.',
           'By 2035, this assumption will be inverted. The marginal cost of generating photorealistic video, voice clones, and articulate essays has fallen to zero. Automated systems already publish millions of synthetic affiliate marketing articles and bot comments per hour.',
-          'This dynamic—often described as the "Dead Internet Hypothesis"—will fundamentally alter how humans discover information. The public, unauthenticated web will become an algorithmic swamp of self-referential machine hallucinations. Finding verified human truth will require new infrastructure.'
+          'This dynamic—often described as the "Dead Internet Hypothesis"—will fundamentally alter how humans discover information. The public, unauthenticated web will become an algorithmic swamp of self-referential machine hallucinations. Finding verified human truth will require new infrastructure.',
+          'The intellectual consequences of delegating human discernment to these synthetic models are explored in [Are We Becoming Too Dependent on Artificial Intelligence?](#articles/are-we-becoming-too-dependent-on-artificial-intelligence).'
         ]
       },
       {

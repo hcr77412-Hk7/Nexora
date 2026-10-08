@@ -309,16 +309,67 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
               )}
 
               <div className="space-y-5">
-                {section.content.map((paragraph, pIdx) => (
-                  <p
-                    key={pIdx}
-                    className={`leading-relaxed ${
-                      idx === 0 && pIdx === 0 ? 'dropcap' : ''
-                    }`}
-                  >
-                    {paragraph}
-                  </p>
-                ))}
+                {section.content.map((paragraph, pIdx) => {
+                  const isDropcap = idx === 0 && pIdx === 0;
+                  
+                  // Helper to parse markdown links [Text](slug)
+                  const renderTextWithLinks = (raw: string) => {
+                    const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+                    const elements: React.ReactNode[] = [];
+                    let lastIdx = 0;
+                    let m: RegExpExecArray | null;
+
+                    while ((m = linkRegex.exec(raw)) !== null) {
+                      if (m.index > lastIdx) {
+                        elements.push(raw.substring(lastIdx, m.index));
+                      }
+                      const linkLabel = m[1];
+                      const linkTarget = m[2];
+                      const cleanSlug = linkTarget.replace(/^#?\/?(articles\/)?/, '');
+                      const matchedArticle = allArticles.find((a) => a.slug === cleanSlug);
+
+                      if (matchedArticle) {
+                        elements.push(
+                          <button
+                            key={`${m.index}-${cleanSlug}`}
+                            type="button"
+                            onClick={() => onSelectArticle(matchedArticle)}
+                            className="inline font-medium text-amber-800 dark:text-amber-400 hover:text-amber-900 dark:hover:text-amber-300 underline decoration-amber-800/40 hover:decoration-amber-800 dark:decoration-amber-400/40 dark:hover:decoration-amber-400 underline-offset-2 transition-colors cursor-pointer text-left"
+                            title={`Read related Nexora inquiry: ${matchedArticle.title}`}
+                          >
+                            {linkLabel}
+                          </button>
+                        );
+                      } else {
+                        elements.push(
+                          <a
+                            key={`${m.index}-${linkTarget}`}
+                            href={linkTarget}
+                            className="inline font-medium text-amber-800 dark:text-amber-400 hover:underline"
+                          >
+                            {linkLabel}
+                          </a>
+                        );
+                      }
+                      lastIdx = m.index + m[0].length;
+                    }
+
+                    if (lastIdx < raw.length) {
+                      elements.push(raw.substring(lastIdx));
+                    }
+
+                    return elements.length > 0 ? elements : raw;
+                  };
+
+                  return (
+                    <p
+                      key={pIdx}
+                      className={`leading-relaxed ${isDropcap ? 'dropcap' : ''}`}
+                    >
+                      {renderTextWithLinks(paragraph)}
+                    </p>
+                  );
+                })}
               </div>
             </section>
           ))}
