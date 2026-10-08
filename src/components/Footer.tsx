@@ -26,10 +26,10 @@ export const Footer: React.FC<FooterProps> = ({
               Nexora
             </span>
             <p className="text-xs sm:text-sm text-stone-500 dark:text-stone-400 max-w-sm leading-relaxed">
-              An independent publication dedicated to high-signal long-form essays on human cognition, technology, science, and the architecture of the future.
+              A thoughtful technology publication investigating how algorithms, digital privacy, smartphones, artificial intelligence, and digital incentives quietly reshape human life.
             </p>
             <div className="pt-2 text-xs text-stone-400 dark:text-stone-500 font-mono">
-              ISSN 2981-402X · Published weekly
+              ISSN 2981-402X · The Hidden Side of Technology
             </div>
           </div>
 
@@ -52,7 +52,7 @@ export const Footer: React.FC<FooterProps> = ({
                   onClick={() => onNavigate({ type: 'articles' })}
                   className="hover:text-stone-900 dark:hover:text-white transition-colors cursor-pointer"
                 >
-                  All 10 Essays
+                  All 10 Inquiries
                 </button>
               </li>
               <li>
@@ -80,7 +80,7 @@ export const Footer: React.FC<FooterProps> = ({
               Core Inquiries
             </h4>
             <ul className="space-y-2 text-xs sm:text-sm">
-              {(['Technology', 'Psychology', 'Science', 'Productivity', 'Society', 'Future'] as Category[]).map(
+              {(['Privacy', 'Attention', 'Algorithms', 'Artificial Intelligence', 'Social Behavior', 'Digital Culture', 'Future of Work'] as Category[]).map(
                 (cat) => (
                   <li key={cat}>
                     <button

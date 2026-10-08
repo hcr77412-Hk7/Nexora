@@ -1,10 +1,11 @@
 export type Category =
-  | 'Technology'
-  | 'Psychology'
-  | 'Science'
-  | 'Productivity'
-  | 'Society'
-  | 'Future';
+  | 'Privacy'
+  | 'Attention'
+  | 'Algorithms'
+  | 'Artificial Intelligence'
+  | 'Social Behavior'
+  | 'Digital Culture'
+  | 'Future of Work';
 
 export interface Author {
   name: string;

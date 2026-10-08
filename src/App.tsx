@@ -154,9 +154,9 @@ export default function App() {
   }, [currentPage]);
 
   // Featured articles
-  const leadFeaturedArticle = ARTICLES[0]; // Attention Economy
+  const leadFeaturedArticle = ARTICLES[0]; // Your Phone Knows More About You Than You Think
   const secondaryFeaturedArticles = useMemo(
-    () => ARTICLES.filter((a) => a.id === '2' || a.id === '4' || a.id === '8'),
+    () => ARTICLES.filter((a) => a.id === '2' || a.id === '3' || a.id === '6'),
     []
   );
 
@@ -178,16 +178,16 @@ export default function App() {
       });
     } else if (currentPage.type === 'articles') {
       updateMetaTags({
-        title: 'All Inquiries & Dispatches – Nexora Publication',
+        title: 'All 10 Inquiries – Nexora: The Hidden Side of Technology',
         description:
-          'Explore our complete collection of 10 long-form inquiries spanning human psychology, attention, artificial intelligence, science, and the future of work.',
+          'Explore our collection of 10 thoughtful inquiries into algorithms, smartphones, privacy, artificial intelligence, attention, and the future of work.',
         canonicalUrl: 'https://nexora.publication/articles'
       });
     } else if (currentPage.type === 'about') {
       updateMetaTags({
-        title: 'About & Curatorial Manifesto – Nexora Journal',
+        title: 'About & Curatorial Manifesto – Nexora',
         description:
-          'Discover the founding philosophy, curatorial standards, and masthead of Nexora—an independent journal built for the inquisitive mind.',
+          'Discover the founding philosophy and curatorial standards of Nexora—a thoughtful publication exploring the hidden mechanics of modern technology.',
         canonicalUrl: 'https://nexora.publication/about'
       });
     } else if (currentPage.type === 'contact') {
@@ -199,9 +199,9 @@ export default function App() {
       });
     } else {
       updateMetaTags({
-        title: 'Nexora – Ideas, Mind & Future Publication',
+        title: 'Nexora – The Hidden Side of Technology',
         description:
-          'A premium minimalist publication exploring deep ideas in technology, human psychology, science, digital culture, and the future of work.',
+          'A thoughtful editorial publication exploring how technology quietly affects our everyday lives, behavior, privacy, attention, relationships, work, and the future.',
         canonicalUrl: 'https://nexora.publication/'
       });
     }

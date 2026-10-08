@@ -21,19 +21,19 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Curatorial Header & Headline */}
         <div className="max-w-3xl mb-12 sm:mb-16">
           <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-amber-800 dark:text-amber-400 font-sans font-medium mb-3">
-            <span>Vol. IV</span>
+            <span>Special Report</span>
             <span aria-hidden="true">·</span>
-            <span>Ideas, Mind & Future Publication</span>
+            <span>The Hidden Side of Technology</span>
             <span aria-hidden="true">·</span>
-            <span>Est. 2026</span>
+            <span>Nexora Journal</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif-editorial font-medium text-stone-900 dark:text-stone-100 tracking-tight leading-[1.12]">
-            Clarity in an age of infinite noise.
+            How technology quietly shapes our everyday lives.
           </h1>
 
           <p className="mt-5 text-lg sm:text-xl text-stone-600 dark:text-stone-300 font-normal leading-relaxed">
-            Nexora is an independent journal exploring foundational shifts in human psychology, artificial intelligence, attention, society, and the horizon of civilization.
+            Nexora is a thoughtful technology publication exploring the unseen mechanisms behind algorithms, smartphones, digital privacy, artificial intelligence, and the psychology of our connected world.
           </p>
         </div>
 

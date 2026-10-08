@@ -16,25 +16,28 @@ export const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => {
           <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-amber-800 dark:text-amber-400 font-sans font-semibold">
             <span>Manifesto & Purpose</span>
             <span aria-hidden="true">·</span>
-            <span>Nexora Journal</span>
+            <span>The Hidden Side of Technology</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-serif-editorial font-medium text-stone-900 dark:text-stone-100 tracking-tight leading-[1.15]">
-            We build refuges for the inquisitive mind.
+            Illuminating the unseen mechanics of modern technology.
           </h1>
 
           <p className="text-xl sm:text-2xl text-stone-600 dark:text-stone-300 font-serif-editorial italic leading-relaxed">
-            In an era dominated by hyperactive feeds and synthetic filler, Nexora publishes rigorous, beautifully written inquiries into ideas that endure.
+            Nexora is an independent editorial publication exploring how software, algorithms, smartphones, and artificial intelligence quietly alter our psychology, privacy, attention, and future.
           </p>
         </div>
 
         {/* Founding Philosophy */}
         <section className="space-y-6 text-base sm:text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
           <p>
-            Nexora was founded in 2026 out of a shared frustration with the contemporary information landscape. The modern web was engineered to optimize for instantaneous reaction rather than reflection. News cycles expire in twenty minutes; algorithmic feeds amplify outrage; and cognitive bandwidth is auctioned to the highest commercial bidder.
+            Most technology coverage focuses either on gadget consumerism—reviewing the latest camera lenses and phone iterations—or celebratory press releases from Silicon Valley venture rounds.
           </p>
           <p>
-            We take the opposing view: that complex, transformational phenomena—such as artificial intelligence, temporal cognition, systemic risk, and the restructuring of human work—cannot be grasped in 280-character soundbites or hurried bullet lists. They demand patient exposition, historical anchoring, and multidisciplinary synthesis.
+            Nexora was founded to explore the questions left in the shadows: What does our smartphone sensor telemetry reveal about our emotional state? How do recommendation engines quietly shape the bounds of public discourse? What happens to the human capacity for deep creativity when micro-stimulus eliminates boredom?
+          </p>
+          <p>
+            We do not publish daily gadget news or partisan outrage. We publish deeply researched, accessible investigations into the systems quietly re-architecting human society.
           </p>
         </section>
 

@@ -27,11 +27,11 @@ export const NewsletterSection: React.FC = () => {
         </div>
 
         <h2 className="text-3xl sm:text-4xl font-serif-editorial font-medium text-stone-900 dark:text-stone-100 tracking-tight">
-          One deeply considered idea, delivered each Sunday.
+          One thoughtful inquiry into the hidden mechanics of technology.
         </h2>
 
         <p className="mt-4 text-base sm:text-lg text-stone-600 dark:text-stone-300 max-w-2xl mx-auto leading-relaxed">
-          No algorithmic clickbait, promotional sponsorships, or daily noise. Just rigorous synthesis exploring technology, psychology, and the future.
+          No gadget hype, PR press releases, or daily news chatter. Just deep analysis exploring how technology quietly shapes our privacy, attention, behavior, and future.
         </p>
 
         {submitted ? (
